@@ -1,5 +1,5 @@
 
-import { square, MyClass } from './module';
+const { square, MyClass } = require('./module');
 
 console.log(square(5));
 var cred = {

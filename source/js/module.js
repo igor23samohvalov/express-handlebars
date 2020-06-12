@@ -21,4 +21,4 @@ class MyClass {
   }
 }
 
-export { sum, square, variable, MyClass };
+module.exports = { sum, square, variable, MyClass };

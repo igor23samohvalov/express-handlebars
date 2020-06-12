@@ -5,7 +5,8 @@
   "license": "ISC",
   "scripts": {
     "start": "set NODE_ENV=development&& gulp",
-    "build": "set NODE_ENV=production&& gulp build"
+    "build": "set NODE_ENV=production&& gulp build",
+    "dev": "nodemon server"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -13,7 +14,6 @@
     "babelify": "^8.0.0",
     "browser-sync": "^2.23.6",
     "browserify": "^15.2.0",
-    "node-sass": "^4.13.1",
     "del": "^3.0.0",
     "gulp": "4.0.0",
     "gulp-autoprefixer": "^6.0.0",
@@ -36,11 +36,20 @@
     "gulp-uglify": "^3.0.0",
     "gulp.spritesmith": "^6.9.0",
     "merge-stream": "^1.0.1",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.4",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "express-session": "^1.17.1",
     "jquery": "^3.3.1",
+    "lowdb": "^1.0.0",
     "normalize.css": "^7.0.0"
   }
 }

@@ -1,0 +1,89 @@
+{
+  "imgs": [
+    "images/products/Work1.jpg",
+    "images/products/Work2.jpg",
+    "images/products/Work3.jpg",
+    "images/products/Work4.jpg",
+    "images/products/Work5.jpg",
+    "images/products/Work6.jpg",
+    "images/products/Work7.jpg",
+    "images/products/Work8.jpg",
+    "images/products/Work9.jpg"
+  ],
+  "skillsets": [
+    {
+      "number": "12",
+      "text": "Возраст начала занятий на скрипке"
+    },
+    {
+      "number": "76",
+      "text": "Концертов отыграл"
+    },
+    {
+      "number": "30",
+      "text": "Максимальное число городов в туре"
+    },
+    {
+      "number": "20",
+      "text": "Лет на сцене в качестве скрипача"
+    }
+  ],
+  "skillsForm": [
+    {
+      "title": "Возраст",
+      "name": "Age"
+    },
+    {
+      "title": "Концертов",
+      "name": "concerts"
+    },
+    {
+      "title": "Число городов",
+      "name": "cities"
+    },
+    {
+      "title": "Лет на сцене",
+      "name": "years"
+    }
+  ],
+  "posts": [
+    {
+      "name": "name",
+      "email": "mail@mail.ru",
+      "message": "hello world"
+    },
+    {
+      "name": "1",
+      "email": "mail@mail.ru",
+      "message": "hey"
+    },
+    {
+      "name": "12",
+      "email": "mail@mail.ru",
+      "message": "dsads"
+    },
+    {
+      "name": "12",
+      "email": "mail@mail.ru",
+      "message": "dsads"
+    },
+    {
+      "name": "12",
+      "email": "mail@mail.ru",
+      "message": "dsads"
+    },
+    {
+      "name": "12",
+      "email": "mail@mail.ru",
+      "message": "dsads"
+    },
+    {
+      "name": "1",
+      "email": "mail@mail.ru",
+      "message": "fsadf"
+    }
+  ],
+  "users": [],
+  "products": [],
+  "skills": []
+}
