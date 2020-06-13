@@ -15,20 +15,24 @@ router.post('/', (req, res) => {
     db.get('posts')
         .push(req.body)
         .write()
-    req.flash('info', 'flash is here!')
-    setTimeout(() => res.redirect('/'), 3000)
+    res.redirect('/')
 })
 
 router.get('/login', (req, res) => {
+    console.log(req.session)
     res.render('login', { title: 'Login Page'});
 })
 router.post('/login', (req, res) => {
     db.get('users')
         .push(req.body)
         .write()
-    res.json({ msg: 'User saved!'})
+    req.session.isLogged = true
+    res.redirect('/admin')
 })
 
+router.all('/admin*', requireLogin, (req, res, next) => {
+    next(); 
+});
 router.get('/admin', (req, res) => {
     res.render('admin', { 
         title: 'Admin Page',
@@ -42,11 +46,18 @@ router.post('/admin/skills', (req, res) => {
     res.json({ msg: 'data saved!'})
 })
 router.post('/admin/upload', (req, res) => {
-    console.log(req.body)
     db.get('products')
         .push(req.body)
         .write()
     res.json({ msg: 'data saved!'})
 })
+
+function requireLogin(req, res, next) {
+    if (req.session.isLogged) {
+        next(); 
+    } else {
+        res.redirect("/login"); 
+    }
+}
 
 module.exports = router

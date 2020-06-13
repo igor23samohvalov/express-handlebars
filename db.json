@@ -83,7 +83,20 @@
       "message": "fsadf"
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "email": "hello@mail.he",
+      "password": "there"
+    },
+    {
+      "email": "1@mai.ru",
+      "password": "sads"
+    },
+    {
+      "email": "hey@me.ruy",
+      "password": "sdasda"
+    }
+  ],
   "products": [],
   "skills": []
 }
